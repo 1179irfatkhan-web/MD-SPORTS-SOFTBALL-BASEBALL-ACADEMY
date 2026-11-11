@@ -8,7 +8,9 @@ import {
   CheckCircle2, 
   ShieldCheck, 
   ExternalLink,
-  Flame
+  Flame,
+  Building2,
+  Navigation
 } from 'lucide-react';
 import { academyInfo } from '../../data/academyInfo';
 
@@ -107,27 +109,29 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenPrivacy })
           </a>
 
           <a
-            href={`mailto:${academyInfo.contact.email}`}
+            href={academyInfo.contact.officeMaps}
+            target="_blank"
+            rel="noopener noreferrer"
             className="p-4 rounded-2xl bg-[#11172B] border border-[#242F52] hover:border-[#FFB21A] transition-all flex flex-col items-center text-center group"
           >
             <div className="w-10 h-10 rounded-xl bg-[#FFB21A]/20 text-[#FFB21A] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-              <Mail className="w-5 h-5" />
+              <Building2 className="w-5 h-5" />
             </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#F5F1E9]">Send Email</span>
-            <span className="text-[11px] text-[#A7A7AD] mt-0.5">meetdabhi511@gmail.com</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-[#F5F1E9]">Visit Our Office</span>
+            <span className="text-[11px] text-[#A7A7AD] mt-0.5">Sahibaug, Ahmedabad</span>
           </a>
 
           <a
-            href={academyInfo.contact.googleMaps}
+            href={academyInfo.contact.practiceGroundMaps}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-2xl bg-[#11172B] border border-[#242F52] hover:border-[#4285F4] transition-all flex flex-col items-center text-center group"
+            className="p-4 rounded-2xl bg-[#11172B] border border-[#242F52] hover:border-[#F36B16] transition-all flex flex-col items-center text-center group"
           >
-            <div className="w-10 h-10 rounded-xl bg-[#4285F4]/20 text-[#4285F4] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-              <MapPin className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl bg-[#F36B16]/20 text-[#F36B16] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+              <Navigation className="w-5 h-5" />
             </div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#F5F1E9]">Google Maps</span>
-            <span className="text-[11px] text-[#A7A7AD] mt-0.5">Gurukul Circle, Nikol</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-[#F5F1E9]">Find Our Practice Ground</span>
+            <span className="text-[11px] text-[#A7A7AD] mt-0.5">Training Venue Maps</span>
           </a>
         </div>
 
@@ -273,80 +277,163 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenPrivacy })
 
           </div>
 
-          {/* Right Column: Academy Coordinates & Location Map (5 cols) */}
+          {/* Right Column: Academy Office & Dedicated Practice Ground Location (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
             
-            {/* Direct Contact Coordinates Box */}
-            <div className="rounded-3xl bg-[#11172B] border border-[#242F52] p-6 sm:p-7 shadow-xl space-y-4">
-              <h4 className="text-lg font-black uppercase text-[#F5F1E9] border-l-2 border-[#F36B16] pl-3">
-                Academy Headquarters
-              </h4>
+            {/* Card 1: Official Academy Office */}
+            <div className="rounded-3xl bg-[#11172B] border border-[#242F52] p-6 sm:p-7 shadow-xl space-y-4 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFB21A]/5 rounded-bl-full pointer-events-none"></div>
+
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFB21A]/10 border border-[#FFB21A]/30 text-[11px] font-bold uppercase tracking-wider text-[#FFB21A]">
+                  <Building2 className="w-3.5 h-3.5" />
+                  Official Academy Office
+                </span>
+                <span className="text-[10px] uppercase font-bold text-[#A7A7AD] tracking-widest">
+                  Administrative
+                </span>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-black uppercase text-[#F5F1E9]">
+                  Academy Office Address
+                </h4>
+                <p className="text-xs text-[#A7A7AD] mt-1">
+                  For administrative enquiries, admissions, player counseling, and document verification.
+                </p>
+              </div>
 
               <div className="space-y-3 text-xs sm:text-sm text-[#A7A7AD]">
-                <div className="p-3.5 rounded-xl bg-[#08070B] border border-white/5 space-y-1">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#FFB21A]">Institution</span>
-                  <p className="font-bold text-[#F5F1E9] text-sm">MD Sports Baseball & Softball Academy</p>
-                  <p className="text-xs text-[#A7A7AD]">Founded 2017 • Nikol, Ahmedabad</p>
+                <div className="p-3.5 rounded-xl bg-[#08070B] border border-white/5 space-y-1.5">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#FFB21A]">Registered Office Address</span>
+                  <p className="font-semibold text-[#F5F1E9] text-xs sm:text-sm leading-relaxed">
+                    {academyInfo.officeAddress.fullAddress}
+                  </p>
+                  <p className="text-[11px] text-[#A7A7AD] flex items-center gap-1.5 pt-1">
+                    <MapPin className="w-3 h-3 text-[#FFB21A]" />
+                    Landmark: Near Girdharnagar Post Office, Sahibaug
+                  </p>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-[#08070B] border border-white/5 space-y-1">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#F36B16]">Founder & Head Coach</span>
-                  <p className="font-bold text-[#F5F1E9] text-sm">Meet Dabhi</p>
-                  <p className="text-xs text-[#A7A7AD]">M.P.Ed • NIC Athletics Coaching • B.P.Ed</p>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-[#08070B] border border-white/5 space-y-1">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#FFB21A]">Location & Landmark</span>
-                  <p className="font-bold text-[#F5F1E9] text-sm">Gurukul Circle, Nikol</p>
-                  <p className="text-xs text-[#A7A7AD]">Ahmedabad, Gujarat, India</p>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="p-3 rounded-xl bg-[#08070B] border border-white/5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#F36B16] block">Head Coach</span>
+                    <span className="font-bold text-[#F5F1E9] text-xs">Meet Dabhi</span>
+                    <span className="text-[10px] text-[#A7A7AD] block mt-0.5">+91 97274 02731</span>
+                  </div>
+                  <div className="p-3 rounded-xl bg-[#08070B] border border-white/5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#FFB21A] block">Location</span>
+                    <span className="font-bold text-[#F5F1E9] text-xs">Sahibaug</span>
+                    <span className="text-[10px] text-[#A7A7AD] block mt-0.5">Ahmedabad, Gujarat</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="pt-2 flex flex-col gap-2">
+              {/* Action Button 1: Visit Our Office */}
+              <div className="pt-2">
                 <a
-                  href={academyInfo.contact.googleMaps}
+                  href={academyInfo.contact.officeMaps}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-[#4285F4]/20 text-[#F5F1E9] hover:text-[#4285F4] border border-white/10 hover:border-[#4285F4]/40 text-xs font-bold uppercase tracking-wider transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#FFB21A] to-[#F36B16] text-[#08070B] font-black text-xs uppercase tracking-wider shadow-lg hover:shadow-orange-500/20 hover:scale-[1.01] transition-all"
                 >
-                  <MapPin className="w-4 h-4 text-[#4285F4]" />
-                  Open in Google Maps Application
+                  <MapPin className="w-4 h-4 text-[#08070B]" />
+                  Visit Our Office
                   <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-
-                <a
-                  href={academyInfo.contact.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/5 hover:bg-pink-500/20 text-[#F5F1E9] hover:text-pink-400 border border-white/10 hover:border-pink-500/40 text-xs font-bold uppercase tracking-wider transition-all"
-                >
-                  <Instagram className="w-4 h-4 text-pink-400" />
-                  Follow @m.d._sports_academy
                 </a>
               </div>
             </div>
 
-            {/* Embedded Responsive Interactive Map */}
-            <div className="rounded-3xl bg-[#11172B] border border-[#242F52] overflow-hidden shadow-xl">
-              <div className="p-3 bg-[#08070B] border-b border-[#242F52] flex items-center justify-between text-xs">
-                <span className="font-bold text-[#F5F1E9] flex items-center gap-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-[#F36B16]" />
-                  Location: Nikol, Ahmedabad
+            {/* Card 2: Practice Ground Location (Dedicated Section) */}
+            <div className="rounded-3xl bg-[#11172B] border-2 border-[#F36B16]/50 p-6 sm:p-7 shadow-2xl space-y-4 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#F36B16]/10 rounded-bl-full pointer-events-none"></div>
+
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F36B16]/20 border border-[#F36B16]/50 text-[11px] font-bold uppercase tracking-wider text-[#F36B16]">
+                  <Navigation className="w-3.5 h-3.5 text-[#F36B16]" />
+                  Dedicated Training Field
                 </span>
-                <span className="text-[10px] text-[#A7A7AD]">Gurukul Circle</span>
+                <span className="text-[10px] uppercase font-bold text-[#FFB21A] tracking-widest">
+                  Live Ground
+                </span>
               </div>
-              <div className="h-64 sm:h-72 w-full bg-[#08070B]">
-                <iframe
-                  title="MD Sports Academy Location at Gurukul Circle, Nikol, Ahmedabad"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14684.520478065448!2d72.6685848!3d23.0556847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e86d34b5c777d%3A0x6b1393dbbb53199c!2sNikol%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+
+              <div>
+                <h4 className="text-xl font-black uppercase text-[#F5F1E9] flex items-center gap-2">
+                  Practice Ground Location
+                </h4>
+                <p className="text-xs text-[#A7A7AD] mt-1 leading-relaxed">
+                  Official practice and training ground for MD Sports Baseball & Softball Academy. Dedicated outdoor sports facility equipped for batting drills, bullpen pitching, fielding, and competitive match simulations.
+                </p>
               </div>
+
+              {/* Clear notice separating Office and Practice Ground */}
+              <div className="p-3.5 rounded-xl bg-[#F36B16]/10 border border-[#F36B16]/30 text-xs text-[#F5F1E9] flex items-start gap-2.5">
+                <Flame className="w-4 h-4 text-[#F36B16] shrink-0 mt-0.5" />
+                <div className="text-[11px] text-[#F5F1E9]/90 leading-relaxed">
+                  <span className="font-bold text-[#FFB21A]">Training Location Notice:</span> All athlete on-field coaching, batting practice, and trials take place exclusively at our Practice Ground, not at the administrative office.
+                </div>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-[#08070B] border border-white/5 space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#F36B16]">Training Facilities</span>
+                  <span className="text-[10px] text-[#A7A7AD]">U-14 • U-17 • U-19 • Senior</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-[11px] text-[#F5F1E9]">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F36B16]"></span>
+                    Batting Cages & Drills
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F36B16]"></span>
+                    Bullpen & Pitching Mounds
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F36B16]"></span>
+                    Infield & Outfield Fielding
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F36B16]"></span>
+                    Match Practice & Simulations
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Button 2: Find Our Practice Ground */}
+              <div className="pt-2">
+                <a
+                  href={academyInfo.contact.practiceGroundMaps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-[#F36B16] hover:bg-[#E05A05] text-white font-black text-xs uppercase tracking-wider shadow-glow-orange hover:scale-[1.01] transition-all"
+                >
+                  <Navigation className="w-4 h-4 text-white" />
+                  Find Our Practice Ground
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links / Social Support */}
+            <div className="p-4 rounded-2xl bg-[#11172B]/60 border border-[#242F52] flex items-center justify-between gap-3 text-xs">
+              <a
+                href={academyInfo.contact.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-[#A7A7AD] hover:text-pink-400 font-semibold transition-colors"
+              >
+                <Instagram className="w-4 h-4 text-pink-400" />
+                <span>@m.d._sports_academy</span>
+              </a>
+              <span className="text-white/20">•</span>
+              <a
+                href={`mailto:${academyInfo.contact.email}`}
+                className="flex items-center gap-2 text-[#A7A7AD] hover:text-[#FFB21A] font-semibold transition-colors truncate"
+              >
+                <Mail className="w-4 h-4 text-[#FFB21A]" />
+                <span className="truncate">{academyInfo.contact.email}</span>
+              </a>
             </div>
 
           </div>

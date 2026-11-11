@@ -82,7 +82,7 @@ export const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) =
           </div>
 
           <p className="text-xs text-center text-[#A7A7AD]/80 pt-2 border-t border-[#242F52]">
-            Location: Gurukul Circle, Nikol, Ahmedabad, Gujarat, India • Established 2017
+            Office: 337/54, Pritampura Society, Part 2, Near Girdharnagar Post Office, Sahibaug, Ahmedabad – 380004, Gujarat, India • Established 2017
           </p>
         </div>
 

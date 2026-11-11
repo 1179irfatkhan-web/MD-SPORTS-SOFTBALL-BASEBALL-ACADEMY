@@ -46,7 +46,7 @@ export const CoachSection: React.FC = () => {
                   <ShieldCheck className="w-3.5 h-3.5 text-[#F36B16]" />
                   Verified Coach Profile
                 </span>
-                <span className="text-[11px] text-[#A7A7AD]">Nikol, Ahmedabad</span>
+                <span className="text-[11px] text-[#A7A7AD]">Sahibaug, Ahmedabad</span>
               </div>
 
               {/* Coach Authentic Portrait Display */}

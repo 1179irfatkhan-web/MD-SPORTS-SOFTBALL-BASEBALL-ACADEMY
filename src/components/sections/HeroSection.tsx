@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#11172B] text-[#F5F1E9] border border-[#242F52]">
                 <MapPin className="w-3.5 h-3.5 text-[#F36B16]" />
-                Nikol, Ahmedabad, Gujarat
+                Sahibaug, Ahmedabad, Gujarat
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#11172B] text-[#FFB21A] border border-[#242F52]">
                 <Award className="w-3.5 h-3.5" />
@@ -133,7 +133,7 @@ export const HeroSection: React.FC = () => {
                     Official Academy Crest
                   </span>
                   <span className="text-[11px] text-[#A7A7AD] font-medium">
-                    Nikol • Ahmedabad
+                    Sahibaug • Ahmedabad
                   </span>
                 </div>
 

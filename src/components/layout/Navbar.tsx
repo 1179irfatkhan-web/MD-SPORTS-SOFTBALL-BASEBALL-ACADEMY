@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-white/90">
               <MapPin className="w-3.5 h-3.5 text-[#F36B16]" />
-              Gurukul Circle, Nikol, Ahmedabad, Gujarat
+              Sahibaug, Ahmedabad, Gujarat
             </span>
             <span className="flex items-center gap-1.5 text-[#FFB21A]">
               ★ Established 2017 • U-14 | U-17 | U-19 | Senior
@@ -154,7 +154,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <div className="lg:hidden bg-[#08070B] border-b border-[#242F52] px-4 pt-3 pb-6 space-y-2 shadow-2xl animate-in slide-in-from-top-2 duration-200">
             <div className="p-3 mb-2 rounded-xl bg-[#11172B] border border-[#242F52] flex items-center justify-between">
               <span className="text-xs text-[#FFB21A] font-semibold">
-                Coach Meet Dabhi • Nikol, Ahmedabad
+                Coach Meet Dabhi • Sahibaug, Ahmedabad
               </span>
               <a
                 href={`tel:${academyInfo.contact.phone}`}

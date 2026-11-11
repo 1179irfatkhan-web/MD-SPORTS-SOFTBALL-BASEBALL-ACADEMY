@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
                   BASEBALL & SOFTBALL ACADEMY
                 </p>
                 <p className="text-xs text-[#FFB21A] mt-0.5">
-                  Established 2017 • Nikol, Ahmedabad
+                  Established 2017 • Sahibaug, Ahmedabad
                 </p>
               </div>
             </div>
@@ -129,20 +129,40 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
             </h4>
             
             <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3 p-3 rounded-xl bg-[#11172B]/60 border border-[#242F52]">
+              {/* Official Office Address */}
+              <div className="flex items-start gap-3 p-3.5 rounded-xl bg-[#11172B]/60 border border-[#242F52]">
                 <MapPin className="w-5 h-5 text-[#F36B16] shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-[#F5F1E9]">Training Center</p>
-                  <p className="text-xs text-[#A7A7AD] mt-0.5">
-                    Gurukul Circle, Nikol, Ahmedabad, Gujarat, India
+                <div className="space-y-1">
+                  <p className="font-semibold text-[#F5F1E9] text-xs uppercase tracking-wider">Office Address</p>
+                  <p className="text-xs text-[#A7A7AD] leading-relaxed">
+                    {academyInfo.officeAddress.fullAddress}
                   </p>
                   <a
-                    href={academyInfo.contact.googleMaps}
+                    href={academyInfo.contact.officeMaps}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-[#FFB21A] hover:underline mt-1 font-medium"
+                    className="inline-flex items-center gap-1 text-xs text-[#FFB21A] hover:underline font-semibold pt-0.5"
                   >
-                    Open on Google Maps <ExternalLink className="w-3 h-3" />
+                    Visit Our Office <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Practice Ground Location */}
+              <div className="flex items-start gap-3 p-3.5 rounded-xl bg-[#18213D]/60 border border-[#FFB21A]/40">
+                <MapPin className="w-5 h-5 text-[#FFB21A] shrink-0 mt-0.5" />
+                <div className="space-y-1">
+                  <p className="font-semibold text-[#FFB21A] text-xs uppercase tracking-wider">Practice Ground Location</p>
+                  <p className="text-xs text-[#A7A7AD] leading-relaxed">
+                    Official training & practice ground for batting, pitching, and match preparation.
+                  </p>
+                  <a
+                    href={academyInfo.contact.practiceGroundMaps}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-[#F36B16] hover:underline font-bold pt-0.5"
+                  >
+                    Find Our Practice Ground <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
               </div>

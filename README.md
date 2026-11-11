@@ -1,7 +1,9 @@
 # MD Sports Baseball & Softball Academy — Official Website
 
 > **Tagline:** *Developing Skills. Building Champions. Inspiring the Future.*  
-> **Head Coach:** Meet Dabhi | **Established:** 2017 | **Location:** Gurukul Circle, Nikol, Ahmedabad, Gujarat, India  
+> **Head Coach:** Meet Dabhi | **Established:** 2017  
+> **Office Address:** 337/54, Pritampura Society, Part 2, Near Girdharnagar Post Office, Sahibaug, Ahmedabad – 380004, Gujarat, India  
+> **Practice Ground Location:** [Google Maps Directions](https://maps.app.goo.gl/UQbv1rFmyf6s5EJ29?g_st=aw)  
 
 ---
 
@@ -31,8 +33,8 @@ All information, records, and milestones on this website strictly adhere to offi
    - **75 players** associated with the academy participated in National-level competitions between 2022 and 2026 across Sub-Junior, Junior, and Senior categories.
 
 3. **SGFI State Championships (2024–2026)**:
-   - **2026 Under-17 Baseball**: Gujarat State Champions *(Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Nikol)*
-   - **2026 Under-19 Baseball**: Gujarat State Champions *(Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Nikol)*
+   - **2026 Under-17 Baseball**: Gujarat State Champions *(Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Ahmedabad)*
+   - **2026 Under-19 Baseball**: Gujarat State Champions *(Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Ahmedabad)*
    - **2026 Under-14 Baseball**: Gujarat State Third Place
    - **2026 Senior Softball**: Gujarat University Third Place
    - **2025 Under-14 Softball**: Gujarat State Champions (Consecutive)

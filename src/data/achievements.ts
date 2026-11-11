@@ -54,7 +54,7 @@ export const stateChampionships: StateChampionshipItem[] = [
     sport: "Baseball",
     result: "Champions",
     resultFull: "Gujarat State Champions",
-    note: "Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Nikol.",
+    note: "Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Ahmedabad.",
     featured: true,
   },
   {
@@ -63,7 +63,7 @@ export const stateChampionships: StateChampionshipItem[] = [
     sport: "Baseball",
     result: "Champions",
     resultFull: "Gujarat State Champions",
-    note: "Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Nikol.",
+    note: "Ahmedabad Rural team represented by students of Shree Swaminarayan Gurukul International School, Ahmedabad.",
     featured: true,
   },
   {

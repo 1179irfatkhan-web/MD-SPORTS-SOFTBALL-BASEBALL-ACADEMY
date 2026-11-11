@@ -12,9 +12,9 @@ export const journeyMilestones: JourneyMilestone[] = [
     year: 2017,
     phase: "The Foundation",
     title: "The Beginning of a Dream",
-    description: "Founded by Meet Dabhi in Nikol, Ahmedabad with a bold vision: to establish structured Baseball & Softball coaching in Gujarat and create authentic competitive pathways for aspiring student-athletes.",
+    description: "Founded by Meet Dabhi in Ahmedabad with a bold vision: to establish structured Baseball & Softball coaching in Gujarat and create authentic competitive pathways for aspiring student-athletes.",
     highlights: [
-      "Inaugural training batches initiated in Nikol, Ahmedabad",
+      "Inaugural training batches initiated in Ahmedabad",
       "One female player selected to represent Gujarat University in the All India University Softball competition"
     ],
     tag: "Academy Founded"
@@ -93,7 +93,7 @@ export const journeyMilestones: JourneyMilestone[] = [
     year: 2026,
     phase: "Historic Baseball Milestone",
     title: "Dual State Gold & 75 National Athletes",
-    description: "A monumental year highlighted by Ahmedabad Rural teams (represented by students of Shree Swaminarayan Gurukul International School, Nikol) capturing state baseball crowns, and crossing the landmark of 75 national players.",
+    description: "A monumental year highlighted by Ahmedabad Rural teams (represented by students of Shree Swaminarayan Gurukul International School, Ahmedabad) capturing state baseball crowns, and crossing the landmark of 75 national players.",
     highlights: [
       "Under-13 Softball: Team Gujarat secured 5th Position in National Championship (Softball Association of India, Coach: Meet Dabhi)",
       "Under-19 Softball: Gujarat State Champions (Team Ahmedabad Rural, Coach: Meet Dabhi)",

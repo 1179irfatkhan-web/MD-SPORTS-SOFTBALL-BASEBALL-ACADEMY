@@ -35,7 +35,7 @@ export const AboutSection: React.FC = () => {
           badge="Our Identity & Purpose"
           title="MORE THAN ACADEMIC TRAINING."
           highlight="A JOURNEY OF CHAMPIONS."
-          subtitle="Founded by Meet Dabhi in 2017 to develop technically skilled, disciplined, confident, and championship-ready athletes in Nikol, Ahmedabad."
+          subtitle="Founded by Meet Dabhi in 2017 to develop technically skilled, disciplined, confident, and championship-ready athletes in Ahmedabad."
         />
 
         {/* 6 Core Pillars Grid */}
@@ -98,7 +98,7 @@ export const AboutSection: React.FC = () => {
                 <div className="lg:col-span-7 space-y-5">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#F36B16]/10 text-[#FFB21A] text-xs font-bold uppercase tracking-wider border border-[#F36B16]/20">
                     <Flame className="w-3.5 h-3.5 text-[#F36B16]" />
-                    Est. 2017 • Nikol, Ahmedabad
+                    Est. 2017 • Ahmedabad, Gujarat
                   </div>
                   
                   <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#F5F1E9] leading-tight">
@@ -261,7 +261,7 @@ export const AboutSection: React.FC = () => {
           {/* Bottom Banner */}
           <div className="bg-[#08070B] border-t border-[#242F52] p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs text-[#A7A7AD] text-center sm:text-left">
-              Interested in training under Coach Meet Dabhi in Nikol, Ahmedabad?
+              Interested in training under Head Coach Meet Dabhi?
             </span>
             <div className="flex items-center gap-3">
               <a

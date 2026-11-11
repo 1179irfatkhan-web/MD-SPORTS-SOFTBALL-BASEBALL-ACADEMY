@@ -9,7 +9,7 @@ export const HighlightsSection: React.FC = () => {
       number: "2017",
       label: "Established",
       title: "Founded in 2017",
-      description: "Pioneering structured Baseball and Softball athletic training in Nikol, Ahmedabad for nearly a decade.",
+      description: "Pioneering structured Baseball and Softball athletic training in Ahmedabad for nearly a decade.",
       accent: "from-[#F36B16] to-[#FFB21A]",
       badge: "9+ Years of Journey",
     },

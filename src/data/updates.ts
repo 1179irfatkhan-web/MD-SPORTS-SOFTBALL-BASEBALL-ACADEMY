@@ -63,7 +63,7 @@ export const academyUpdates: AcademyUpdate[] = [
     date: "2026",
     category: "Championship",
     title: "Double State Title Triumph at 2026 Gujarat State Baseball Championships",
-    summary: "Ahmedabad Rural teams represented by students of Shree Swaminarayan Gurukul International School, Nikol under Head Coach Meet Dabhi clinched BOTH the Under-17 and Under-19 Gujarat State Baseball Championships.",
+    summary: "Ahmedabad Rural teams represented by students of Shree Swaminarayan Gurukul International School, Ahmedabad under Head Coach Meet Dabhi clinched BOTH the Under-17 and Under-19 Gujarat State Baseball Championships.",
     badge: "Championship Gold",
     highlightPoints: [
       "Under-17 Baseball: Gujarat State Champions",
@@ -83,7 +83,7 @@ export const academyUpdates: AcademyUpdate[] = [
     highlightPoints: [
       "Sub-Junior, Junior & Senior categories covered",
       "Strong pipeline feeding Gujarat State representation",
-      "Consistent training excellence from Nikol, Ahmedabad"
+      "Consistent training excellence in Ahmedabad"
     ]
   },
   {
@@ -104,7 +104,7 @@ export const academyUpdates: AcademyUpdate[] = [
     date: "Season 2026",
     category: "Announcement",
     title: "Enrolment Open for Under-14, Under-17, Under-19 & Senior Categories",
-    summary: "Admissions open for young student-athletes aiming for structured Baseball and Softball coaching, fitness conditioning, and tournament competitive preparation in Nikol, Ahmedabad.",
+    summary: "Admissions open for young student-athletes aiming for structured Baseball and Softball coaching, fitness conditioning, and tournament competitive preparation in Ahmedabad.",
     badge: "Now Enrolling",
     highlightPoints: [
       "Personalized technical skill assessments",
